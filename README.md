@@ -21,7 +21,7 @@ nvim/
 ├── init.lua
 ├── lazy-lock.json
 └── lua/
-
+```
 ---
 
 ## CLI Tools
