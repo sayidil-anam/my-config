@@ -13,7 +13,7 @@ Personal dotfiles & config backup. Mostly for my own use, but feel free to refer
 
 ## Neovim
 
-Lua-based config using [lazy.nvim](https://github.com/folke/lazy.nvim) as the plugin manager.
+Lua-based config built on top of [NvChad](https://nvchad.com/) with [lazy.nvim](https://github.com/folke/lazy.nvim) as the plugin manager.
 
 **Structure:**
 ```
@@ -21,7 +21,7 @@ nvim/
 ├── init.lua
 ├── lazy-lock.json
 └── lua/
-```
+
 ---
 
 ## CLI Tools
