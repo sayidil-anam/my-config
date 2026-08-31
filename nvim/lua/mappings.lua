@@ -30,3 +30,28 @@ vim.keymap.set({ "n", "v" }, "<RightMouse>", function()
 end, {})
 
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
+
+-- Toggle inlay hints
+map("n", "<leader>ih", function()
+  vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled({ bufnr = 0 }), { bufnr = 0 })
+end, { desc = "Toggle inlay hints" })
+
+map("n", "<leader>mw", function()
+  require("mywpm").open_dashboard()
+end, { desc = "Open mywpm dashboard" })
+
+
+-- Pindah ke buffer berikutnya (Normal Mode)
+map("n","<tab>",function()
+  require("nvchad.tabufline").next()
+end, { desc = "Pindah buffer kanan"}) 
+
+-- Pindah ke buffer sebelumnya (Normal mode)
+map("n", "s<tab>", function()
+  require("nvchad.tabufline").prev()
+end, { desc = "Pindah buffer kiri"})
+
+-- Menutup buffer aktif
+map("n", "<leader>x", function()
+  require("nvchad.tabufline").close_buffer()
+end, {desc = "Tutup buffer"})

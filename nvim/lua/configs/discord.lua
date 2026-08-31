@@ -1,11 +1,11 @@
 -- The setup config table shows all available config options with their default values:
 require("neocord").setup({
   -- General options
-  logo                = "fx_logo",                         -- "auto" or url
- 
-  logo_tooltip        = "vscode, jetbrains killers!",                                                                                                                           -- nil or string
+  -- logo                =
+  -- "https://yt3.googleusercontent.com/owRprEUEOZmPE5fK7VnrGTVjzFNKrAYSjI5vqcktx90NbbuoPi3tK6Ss-PHIa2styxXlho5w7g=s160-c-k-c0x00ffffff-no-rj",                         -- "auto" or url
+  -- logo_tooltip        = "vscode, jetbrains killers!",                                                                                                                           -- nil or string
   main_image          = "logo",                                                                                                                                      -- "language" or "logo"
-  client_id           = "1499812610319716406",                                                                                                                       -- Use your own Discord application client id (not recommended)
+  client_id           = "1157438221865717891",                                                                                                                       -- Use your own Discord application client id (not recommended)
   log_level           = nil,                                                                                                                                         -- Log messages at or above this level (one of the following: "debug", "info", "warn", "error")
   debounce_timeout    = 10,                                                                                                                                          -- Number of seconds to debounce events (or calls to `:lua package.loaded.presence:update(<filename>, true)`)
   blacklist           = {},                                                                                                                                          -- A list of strings or Lua patterns that disable Rich Presence if the current file name, path, or workspace matches
